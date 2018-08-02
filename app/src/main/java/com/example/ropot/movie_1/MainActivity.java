@@ -29,7 +29,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends FragmentActivity {
 
     public static final String BASE_URL = "https://api.themoviedb.org";
-    public static final String API_KEY = "17423b259d9f5645d63aab6a57411556";
+    public static final String API_KEY = "Replace you API KEY here, thanks!";
     public static final String LANGUAGE = "en-US";
     public static final int PAGE = 1;
     public String category;
@@ -145,7 +145,7 @@ public class MainActivity extends FragmentActivity {
                 if (t instanceof IOException) {
                     Toast.makeText(MainActivity.this, "Network error", Toast.LENGTH_LONG).show();
                 } else {
-                    Toast.makeText(MainActivity.this, "hi: " + t.getMessage(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Other error: : " + t.getMessage(), Toast.LENGTH_LONG).show();
                 }
             }
         });

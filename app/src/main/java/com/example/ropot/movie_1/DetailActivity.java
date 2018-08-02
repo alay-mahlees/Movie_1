@@ -25,7 +25,7 @@ public class DetailActivity extends Activity {
         int position = getIntent().getIntExtra("position", 0);
 
 
-        String url =  "http://image.tmdb.org/t/p/w185/"  +  listOfResults.get(position).getPoster_path();
+        String url =  getString(R.string.poster_base_path)  +  listOfResults.get(position).getPoster_path();
         Uri uri = Uri.parse(url);
 
         Toast.makeText(DetailActivity.this, url, Toast.LENGTH_LONG).show();
