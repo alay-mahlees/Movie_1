@@ -6,9 +6,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".DetailActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
 <android.support.constraint.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
 
     <TextView
@@ -27,8 +31,9 @@
         android:id="@+id/thumbnail"
         android:layout_width="172dp"
         android:layout_height="198dp"
+        android:contentDescription="@string/image_view_conten"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="48dp"
         android:src="@drawable/placeholder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/original_title" />
@@ -70,9 +75,12 @@
         android:text="@string/overview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/thumbnail"
-        app:layout_constraintVertical_bias="0.512" />
+        app:layout_constraintVertical_bias="1.0" />
 </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
 
 </layout>
